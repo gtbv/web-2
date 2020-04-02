@@ -36,7 +36,16 @@ img {
     height: 64px;
     background-color: @color-header;
 
-    .header__logo {}
+    .header__logo_wrapper {
+        width: 25%;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        img {
+            width: 120px;
+            height: 48px;
+        }
+    }
 
     .header__navigation {
         width: 55%;
@@ -108,7 +117,7 @@ img {
             display: block;
             text-align: center;
 
-            .hero__explore {
+            .hero__explore, .hero__purchase {
                 color: @color_text_primary;
                 text-transform: uppercase;
                 width: 128px;
@@ -120,19 +129,13 @@ img {
                 font-weight: bold;
             }
 
-            .hero__explore:hover {
+            .hero__purchase {
+                color: white;
                 background-color: @color_button_purchase;
             }
 
-            .hero__purchase {
-                color: white;
-                text-transform: uppercase;
-                width: 128px;
+            .hero__explore:hover {
                 background-color: @color_button_purchase;
-                border: 0px;
-                height: 48px;
-                border-top: 5px solid white;
-                font-weight: bold;
             }
 
             .hero__purchase:hover {
