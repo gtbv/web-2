@@ -148,28 +148,29 @@ img {
     flex-direction: row;
     align-items: stretch;
 
-    .benefit__item {
+    .benefit__item, .benefit_inversed_item {
         flex: 1;
         height: 100%;
         text-align: center;
         padding-top: 80px;
-        padding-bottom: 24px;
-        color: @color_benefit_item_border;
+        padding-bottom: 48px;
         border-top: 5px solid @color_benefit_item_border;
         background-color: @color_benefit_item_bg;
 
-        img {
-            
-        }
-
         h3 {
             margin-top: 44px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: @color_benefit_item_border;
         }
     }
 
     .benefit_inversed_item {
-        flex: 1;
-        height: auto;
-        text-align: center;
+        border-color: white;
+        background-color: #18cfab;
+        
+        h3 {
+            color: white;
+        }
     }
 }
