@@ -52,7 +52,7 @@ img {
         width: 55%;
 
         &-item {
-            padding: 24px 8px 20px 8px;
+            padding: 12px 8px 12px 8px;
             text-decoration: none;
             color: #ffffff;
             color: @color-navigation-header-item;
@@ -60,13 +60,45 @@ img {
             &:hover {
                 color: @color-navigation-header-item-focused;
             }
+
+            @media screen and (min-width: 576px){
+                padding: 12px 8px 12px 8px;
+            }
+        
+            @media screen and (min-width: 678px){
+                padding: 16px 8px 16px 8px;
+            }
+        
+            @media screen and (min-width: 992px){
+                padding: 24px 8px 20px 8px;
+            }
+        
+            @media screen and (min-width: 1200px){
+                padding: 24px 8px 20px 8px;
+            }
         }
     }
 }
 
 .hero {
     width: 100%;
-    height: 740px;
+    height: 320px;
+
+    @media screen and (min-width: 576px){
+        height: 320px;
+    }
+
+    @media screen and (min-width: 678px){
+        height: 480px;
+    }
+
+    @media screen and (min-width: 992px){
+        height: 740px;
+    }
+
+    @media screen and (min-width: 1200px){
+        height: 740px;
+    }
 
     .hero__image {
         width: 100%;
@@ -76,7 +108,23 @@ img {
     .hero__content {
         width: 100%;
         position: absolute;
-        top: 32%;
+        top: 12%;
+
+        @media screen and (min-width: 576px){
+            top: 12%;
+        }
+    
+        @media screen and (min-width: 678px){
+            top: 16%;
+        }
+    
+        @media screen and (min-width: 992px){
+            top: 32%;
+        }
+    
+        @media screen and (min-width: 1200px){
+            top: 32%;
+        }
 
         h1 {
             color: @color_text_primary;
@@ -109,14 +157,25 @@ img {
         }
 
         &_buttons {
-            margin-top: 76px;
             display: block;
             text-align: center;
+        
+            @media screen and (min-width: 678px){
+                margin-top: 76px;
+            }
+        
+            @media screen and (min-width: 992px){
+                margin-top: 76px;
+            }
+        
+            @media screen and (min-width: 1200px){
+                margin-top: 76px;
+            }
 
             &_button {
                 color: @color_text_primary;
                 text-transform: uppercase;
-                width: 128px;
+                width: 144px;
                 background-color: @color_text_secondary;
                 border: 0px;
                 margin-right: 24px;
@@ -145,31 +204,20 @@ img {
 }
 
 .benefit {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: stretch;
-    flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
 
     .benefit__item, .benefit_inversed_item {
-        width: 25%;
         text-align: center;
         padding-top: 80px;
         padding-bottom: 48px;
         border-top: 5px solid @color_benefit_item_border;
         background-color: @color_benefit_item_bg;
-
-        @media only screen and (max-width: 740px) {
-            width: 50%;
-        }
-
-        @media only screen and (max-width: 480px) {
-            width: 100%;
-        }
     
         h3 {
             margin-top: 44px;
             text-transform: uppercase;
+            font-size: 20px;
             font-weight: bold;
             color: @color_benefit_item_border;
         }
@@ -186,22 +234,8 @@ img {
 }
 
 .features {
-    width: 80%;
     padding-top: 80px;
     padding-bottom: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-
-    @media only screen and (max-width: 740px) {
-        width: 100%;
-        padding-top: 40px;
-    }
-
-    @media only screen and (max-width: 480px) {
-        width: 100%;
-        padding-top: 20px;
-    }
 
     &__title {
         text-align: center;
@@ -211,13 +245,7 @@ img {
     }
 
     &__container {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: wrap;
-
         &__item {
-            width: 33%;
             padding-top: 64px;
 
             &-title {
@@ -240,32 +268,13 @@ img {
                 color: #777777;
                 font-weight: normal;
             }
-
-            @media only screen and (max-width: 740px) {
-                width: 50%;
-                padding-top: 32px;
-            }
-        
-            @media only screen and (max-width: 480px) {
-                width: 100%;
-                padding-top: 16px;
-            }
-        }
-
-        @media only screen and (max-width: 740px) {
-            padding-left: 16px;
-            padding-right: 16px;
-        }
-    
-        @media only screen and (max-width: 480px) {
-            padding-left: 16px;
-            padding-right: 16px;
         }
     }
 }
 
 footer {
     width: 100%;
+
     height: 480px;
 
     img {
